@@ -28,7 +28,7 @@ class DashboardView extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            const SizedBox(height: 40),
+            const SizedBox(height: 40), // Gap above the box
             Center(
               child: Container(
                 width: MediaQuery.of(context).size.width * 0.9,
@@ -139,7 +139,7 @@ class DashboardView extends StatelessWidget {
                           child: const Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(Icons.calculate,
+                              Icon(Icons.savings,
                                   size: 50, color: Colors.white),
                               SizedBox(height: 10),
                               Text(
@@ -157,7 +157,7 @@ class DashboardView extends StatelessWidget {
                     ),
                     const SizedBox(height: 20),
 
-                    // Arithmetic View Card
+                    // Arithmetic Operations Card
                     Card(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15.0),
@@ -191,11 +191,11 @@ class DashboardView extends StatelessWidget {
                           child: const Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(Icons.functions,
+                              Icon(Icons.calculate,
                                   size: 50, color: Colors.white),
                               SizedBox(height: 10),
                               Text(
-                                'Arithmetic View',
+                                'Arithmetic Operations',
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
